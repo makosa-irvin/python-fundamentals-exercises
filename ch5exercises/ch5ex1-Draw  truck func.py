@@ -1,0 +1,52 @@
+import turtle
+
+def drawtruck(x,y,sizeSF):
+    t = turtle.Turtle()
+    screen = t.getscreen()
+    
+    t.penup()
+    t.goto(x,y)
+    t.pendown()
+
+    #draw truck
+    t.fillcolor("black")
+    t.begin_fill ()
+    t.circle (20 * sizeSF)
+    t.end_fill ()
+    t.penup ()
+    t.forward (120 * sizeSF)
+    t.pendown ()
+    t.begin_fill ()
+    t.circle (20 * sizeSF)
+    t.end_fill ()
+    t.penup ()
+    t.left (90)
+    t.forward (40 * sizeSF)
+    t.right (90)
+    t.forward (30 * sizeSF)
+    t.right (180)
+    t.pendown ()
+    t.fillcolor("yellow")
+    t.begin_fill ()
+    t.forward (180 * sizeSF)
+    t.right (90)
+    t.forward (30 * sizeSF)
+    t.right (90)
+    t.forward (90 * sizeSF)
+    t.left (90)
+    t.forward (30 * sizeSF)
+    t.right (90)
+    t.forward (30 * sizeSF)
+    t.right (45)
+    t.forward (43 * sizeSF)
+    t.left (45)
+    t.forward (30 * sizeSF)
+    t.right (90)
+    t.forward (30 * sizeSF)
+    t.end_fill ()
+    t.ht()
+
+    screen.exitonclick()
+
+drawtruck(100,100,0.5)
+
